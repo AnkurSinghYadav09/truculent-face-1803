@@ -1,15 +1,4 @@
 import styled from "styled-components"
-export const Green=styled.div`
-width: 391px;
-    height: 402px;
-background:url(https://blog-cdn.everhour.com/assets/images/new-design/background-elements/dotted/oval-dotted-green.png);
-background-size: cover;
-position: absolute;
-    z-index: -1;
-    max-width: 100%;
-    margin-left:1000px;
-
-`
 export const C=styled.div`
 height:4000px;
 width:97%;
