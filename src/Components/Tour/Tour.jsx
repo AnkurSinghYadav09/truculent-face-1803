@@ -24,7 +24,17 @@ import { Billhead } from "./Tour.styled";
 import { Logo } from "./Tour.styled";
 import { Logoicon } from "./Tour.styled";
 /////////////////////////////////////////
-// import {Manage } from "./Tour.styled";
+import {Manage } from "./Tour.styled";
+import {Managehead } from "./Tour.styled";
+import {ManageBlog } from "./Tour.styled";
+////////////////////////////////////////////////////////////////
+import {Visual} from "./Tour.styled";
+import {Visualhead } from "./Tour.styled";
+import {VisualBlog } from "./Tour.styled";
+/////////////////////////////////////////////////////////
+import {Team} from "./Tour.styled";
+import {Teamhead } from "./Tour.styled";
+import {TeamBlog } from "./Tour.styled";
 
 
 
@@ -392,6 +402,350 @@ const Tour = () => {
           </Blog>
           
         </Bill>
+        <Manage>
+        <Managehead>
+            <TimeH1>Managing tasks</TimeH1>
+            <Tp>
+            Project management and time tracking with our all-in-one solution
+            </Tp>
+            <div>
+              <img className="img-responsive"
+                src="https://blog-cdn.everhour.com/assets/images/new-design/screens/new-tour/projects-board-view-v3.webp"
+                alt=""
+              />
+            </div>
+          </Managehead>
+          <ManageBlog>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Manage tasks</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Create new tasks in seconds, set priorities, deadlines and assign to the team.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Use sections and tags</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Use tags and sections to organize, and add context, to your tasks.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>List or Board views</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Whether you prefer board or list views for your project tasks, we have you covered.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Copy templates</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Copy project with tasks and estimates to start new similar projects in minutes.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Estimates</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Set time estimates so at any time you can see the time you spend and what is left.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Archive</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Archive projects that you no longer need. We keep all time and data preserved.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          </ManageBlog>
+        </Manage>
+        <Visual>
+        <Visualhead>
+            <TimeH1>Visual projects and employee scheduling</TimeH1>
+            <Tp>
+            Map out your plans and see them with clarity
+            </Tp>
+            <div>
+              <img className="img-responsive"
+                src="https://blog-cdn.everhour.com/assets/images/new-design/screens/resource-planning-members-new-v2.webp"
+                alt=""
+              />
+            </div>
+          </Visualhead>
+          <VisualBlog>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Visualize</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                View an interactive plan with your team’s schedule or project portfolio on one page.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Plan vs reported</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                See the progress of logged time vs. scheduled time of every team member.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Resource availability</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Know when someone with the necessary expertise will be available for a new project.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Absence</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Add your team’s leave or holidays to the schedule to keep records and avoid conflicts.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Filter</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Zoom in & out, search, filter and sort to quickly view specific team members and assignments.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Avoid overbooking</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Configure weekly capacity and see who’s overbooked and who can take on more.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          </VisualBlog>
+          </Visual>
+          <Team>
+          <Teamhead>
+            <TimeH1>Team management</TimeH1>
+            <Tp>
+            Your team's working hours, now more organized and easy to read
+            </Tp>
+            <div>
+              <img
+                src="https://blog-cdn.everhour.com/assets/images/new-design/screens/new-tour/summary-dashboard-v4.webp"
+                alt=""
+              />
+            </div>
+          </Teamhead>
+          <TeamBlog>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Summary charts</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Quickly evaluate what is going on in your team, and how everyone is performing.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Time approval</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Be notified when someone submits timesheets for approval. Lock further editing.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Lock time editing</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Set a rule to prevent members editing time entries after a certain period.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Correct employee time</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Admins can easily edit time on behalf of their team members if there was a mistake.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Time log</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                All changes and estimates made to the task time are logged and available for revision.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>
+Roles and permissions</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Control the access of different users in your team to features and data.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="public\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>
+Deactivating users</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Deactivate any user but still see all their logged time in reports.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Team groups</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Group organization members into teams that reflect your company structure.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          <Bld>
+              <Logo>
+                <Logoicon><img src="\logo\seemless.png" alt=""/></Logoicon>
+                <div style={{fontWeight:"bold"}}><h3>Max hours limits</h3></div> 
+              </Logo>
+              <div style={{marginTop:"20px"}}>
+                <p>
+                Set the maximum number of hours a contractor can report. Set it daily, weekly or monthly.
+                </p>
+              </div>
+              <div style={{marginTop:"40px"}}>
+                <hr />
+              </div>
+            </Bld>
+          </TeamBlog>
+          </Team>
       </C>
     </>
   );

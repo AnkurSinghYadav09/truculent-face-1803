@@ -1,6 +1,6 @@
 import styled from "styled-components"
 export const C=styled.div`
-height:5000px;
+height:20000px;
 width:97%;
 border:1px solid orange;
 margin-left:20px;
@@ -15,7 +15,7 @@ display:flex;
 gap:10px;
 `
 export const Head1=styled.div`
-border:1px solid red;
+// border:1px solid red;
 width:100%;
 `
 export const P1=styled.div`
@@ -25,7 +25,7 @@ text-align:left;
 color:gray;
 `
 export const Head2=styled.div`
-border:1px solid red;
+// border:1px solid red;
 height:500px;
 width:100%;
 margin-right:5px;
@@ -119,7 +119,7 @@ font-size:21px;
 export const Time=styled.div`
 margin-top:100px;
 margin-bottom:100px;
-border:1px solid black;
+// border:1px solid black;
 maring:auto;
 
 
@@ -129,7 +129,7 @@ width:75%;
 text-align:centre;
 margin:auto;
 justify-content:centre;
-border:1px solid blue;
+// border:1px solid blue;
 img{
     width:100%;
 }
@@ -147,7 +147,7 @@ text-align:center;
 export const Blog=styled.div`
 display:grid;
 grid-template-columns:repeat(3,1fr);
-border:1px solid black;
+// border:1px solid black;
 height:700px;
 width:85%;
 margin-left:100px;
@@ -171,7 +171,7 @@ gap:10px;
 export const Bill=styled.div`
 margin-top:100px;
 margin-bottom:100px;
-border:1px solid black;
+// border:1px solid black;
 margin:auto;
 
 `
@@ -180,16 +180,95 @@ width:75%;
 text-align:centre;
 margin:auto;
 justify-content:centre;
-border:1px solid blue;
+// border:1px solid blue;
 img{
     width:100%;
 }`
 ////////////////////////////////////////////////////////////////
-// export const Manage=styled.div`
-
-// margin-top:100px;
-// margin-bottom:100px;
+export const Manage=styled.div`
+margin-top:200px;
+padding-top:30px;
+margin-bottom:100px;
 // border:1px solid black;
-// margin:auto;
+margin:auto;
 
-// `
+`
+export const Managehead=styled.div`
+width:75%;
+text-align:centre;
+margin:auto;
+justify-content:centre;
+// border:1px solid blue;
+img{
+    width:100%;
+}
+`
+export const ManageBlog=styled.div`
+display:grid;
+grid-template-columns:repeat(3,1fr);
+// border:1px solid black;
+height:450px;
+width:85%;
+margin-left:100px;
+margin-top:50px;
+gap:30px;
+`
+/////////////////////////////////////////////
+
+export const Visual=styled.div`
+margin-top:200px;
+padding-top:30px;
+margin-bottom:100px;
+// border:1px solid black;
+margin:auto;
+
+`
+export const Visualhead=styled.div`
+width:75%;
+text-align:centre;
+margin:auto;
+justify-content:centre;
+// border:1px solid blue;
+img{
+    width:100%;
+}
+`
+export const VisualBlog=styled.div`
+display:grid;
+grid-template-columns:repeat(3,1fr);
+// border:1px solid black;
+height:450px;
+width:85%;
+margin-left:100px;
+margin-top:50px;
+gap:30px;
+`
+///////////////////////////
+export const Team=styled.div`
+margin-top:200px;
+padding-top:50px;
+margin-bottom:100px;
+// border:1px solid black;
+margin:auto;
+
+`
+export const Teamhead=styled.div`
+width:75%;
+text-align:centre;
+margin:auto;
+justify-content:centre;
+// border:1px solid blue;
+img{
+    width:100%;
+}
+`
+export const TeamBlog=styled.div`
+display:grid;
+grid-template-columns:repeat(3,1fr);
+// border:1px solid black;
+height:600px;
+width:85%;
+margin-left:100px;
+margin-top:50px;
+gap:30px;
+`
