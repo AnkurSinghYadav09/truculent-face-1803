@@ -17,7 +17,13 @@ img {
   z-index: 100;
   top: 0;
   left: 0;
+  background-color: rgb(253, 253, 253);
+  
 }
+
+/* .main-nav{
+
+} */
 
 .logo {
   display: flex;
@@ -64,26 +70,30 @@ img {
   width: fit-content;
   /* border: 2px solid rgb(16, 16, 22); */
   padding-top: 15px;
-  gap: 10px;
+  gap: 15px;
+  flex-direction: row;
   margin-right: 30px;
+  
 }
 
-.nav-login-signup > button {
+/* .nav-login-signup > button {
   padding: 5px 7px 5px;
   padding-bottom: -4px;
   border-radius: 5px;
   background-color: #58bc71;
   color: white;
-}
+} */
 
 .nav-login-signup > button:hover{
     box-shadow: rgba(19, 195, 211, 0.56) 4px 1px 70px 1px;    
+    transition: all 0.3s;
 }
 
-.nav-login-signup > h2 {
-  padding-top: 7px;
-  margin-right: 5px;
+.nav-login-signup > h2> a {
   
+  padding-top: 20px;
+  /* margin-right: -9px; */
+  /* padding-left: 10px; */
 }
 .nav-login-signup > h2:hover{
     text-shadow: 0 0 .05px black, 0 0 .09px black, 0 0 1px black;
