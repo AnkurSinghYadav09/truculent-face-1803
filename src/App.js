@@ -1,13 +1,8 @@
-
-
-import Navbar from './Components/Navbar/Navbar';
-import Tour from "./Components/Tour/Tour"
-
+import Signup from "./Components/Signup/Signup";
 function App() {
   return (
-    <div>
-       <Navbar/> 
-       <Tour/>    
+    <div>   
+      <Signup />
     </div>
   );
 }
