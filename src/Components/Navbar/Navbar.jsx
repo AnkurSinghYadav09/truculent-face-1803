@@ -5,6 +5,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <>
+    <div style={{height:"100px"}}></div>
       <div className="main-nav">
         {/* 1st logo part  */}
         <div className="logo">
