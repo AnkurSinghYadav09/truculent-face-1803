@@ -1,10 +1,11 @@
 import React from "react";
-// import logo_pic from "./logo"
+import { Button } from "@chakra-ui/react";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <>
+    <div style={{height:"100px"}}></div>
       <div className="main-nav">
         {/* 1st logo part  */}
         <div className="logo">
@@ -47,9 +48,21 @@ const Navbar = () => {
         <div className="nav-login-signup">
           <h2>
             {" "}
-            <a href="##">Log in</a>
+            <a href="##">Login</a>
           </h2>
-          <button>Sign up</button>
+          <Button
+              bg={"#56BB70"}
+              color="white"
+              size="sm"
+              fontSize="13px"
+              fontWeight="400"
+              padding="5px 32px"
+              borderRadius={"3px"}
+              _hover={{ bg: "#56BB70", color: "white", boxShadow: "dark-lg" }}
+            >
+             Sign up
+            </Button>
+          {/* <button></button> */}
         </div>
       </div>
     </>
