@@ -1,0 +1,36 @@
+.footer{
+    height: 635px;
+    width: 100%;
+    background-color: #161817;
+    color: #7c7c7c;
+    /* display: flex; */
+   padding-top: 70px;
+    
+}
+
+
+.uii{
+  display: flex;
+  list-style: none;
+  text-align: center;
+  gap: 30px;
+  line-height: 40px;
+  width: 1140px;
+  margin: auto;
+  left: 0;
+ 
+}
+
+.sul{
+  list-style: none;
+  text-align: left;
+  left: 0;
+}
+
+.lower{
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+  margin: auto;
+  margin-top: 20px;
+}
