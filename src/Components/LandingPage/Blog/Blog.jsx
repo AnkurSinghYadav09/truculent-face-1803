@@ -27,7 +27,7 @@ const boxes = [
 
 const Blog = () => {
   return(
-    <Container>
+    <BContainer>
       <div>
         <div>
           <h2>Get more from Everhour</h2>
@@ -47,7 +47,7 @@ const Blog = () => {
         </div>
       </div>
 
-      <TryFree>
+      <BTryFree>
         <div>
           <h2>Take control of your time with Everhour</h2>
           <p>Beautiful integrations. Intuitive interface. No unexpected fees</p>
@@ -61,7 +61,7 @@ const Blog = () => {
           </div>
         </div>
 
-        <ul>
+        <ul className='ulist'>
           <li>
             <i></i>
             <p>Track time from the apps you already use</p>
@@ -93,14 +93,14 @@ const Blog = () => {
           </li>
         </ul>
         
-      </TryFree>
-    </Container>
+      </BTryFree>
+    </BContainer>
   )
 }
 
 export {Blog}
 
-const Container = styled.div`
+const BContainer = styled.div`
   & > div{
     width:96%;
     margin:40px auto 100px;
@@ -164,7 +164,7 @@ const Container = styled.div`
 `
 
 
-const TryFree = styled.div`
+const BTryFree = styled.div`
   display:flex;
   justify-content:space-around;
   align-items:center;
@@ -216,11 +216,11 @@ const TryFree = styled.div`
   }
 
 
-  ul{
+  .ulist{
     li{
       display:flex;
       align-items:center;
-      margin:-18px 0px;
+      margin:18px 0px;
       i{
         margin-right:12px;
         font-size:12px;

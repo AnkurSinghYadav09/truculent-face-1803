@@ -17,20 +17,20 @@ function Badge(props) {
     return (
         <div>
            <section class="u-grid badges">
-        <div class="container">
-          <p class="center mb--48"> <small>A time tracker you can trust for life </small></p>
+        <div class="container" style={{width:"100%",textAlign:"center"}}>
+          < p style={{marginTop:"50px"}}><small style={{color:"grey"}} >A time tracker you can trust for life </small></p>
                     <Badged>
                         
-                <div><img src={one} alt="" /></div>
-                <div><img src={two} alt="" /></div>
-                <div><img src={three} alt="" /></div>
-                <div><img src={four} alt="" /></div>
-                <div><img src={five} alt="" /></div>
-                <div><img src={six} alt="" /></div>
-                <div><img src={seven} alt="" /></div>
-                <div><img src={eight} alt="" /></div>
-                <div><img src={nine} alt="" /></div>
-                <div><img src={ten}  alt="" /></div>
+                <div><img className='badges' src={one} alt="" /></div>
+                <div><img className='badges' src={two} alt="" /></div>
+                <div><img className='badges' src={three} alt="" /></div>
+                <div><img className='badges' src={four} alt="" /></div>
+                <div><img className='badges' src={five} alt="" /></div>
+                <div><img className='badges' src={six} alt="" /></div>
+                <div><img className='badges' src={seven} alt="" /></div>
+                <div><img className='badges' src={eight} alt="" /></div>
+                <div><img className='badges' src={nine} alt="" /></div>
+                <div><img className='badges' src={ten}  alt="" /></div>
           </Badged>   
         </div>
       </section>
@@ -41,8 +41,24 @@ function Badge(props) {
 export default Badge;
 
 const Badged = styled.div`
+
+
+
 display:grid;
-width:300px;
-grid-template-columns: repeat(10,1fr);
+width:80%;
+height:80px;
+grid-template-columns: repeat(10,100px);
+grid-gap:15px;
+margin:auto;
+margin-top:50px;
+
+
+.badges{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+
+
 `
 

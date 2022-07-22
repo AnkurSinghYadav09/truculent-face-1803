@@ -9,7 +9,7 @@ const Intro = () => {
   
 
   return (
-  <Conatiner>
+  <REConatiner>
     <div>
       <h1>Powerful time tracking software with hassle-free integrations</h1>
       <h3>Accurate time tracker for budgeting, client invoicing and painless payroll.
@@ -18,17 +18,15 @@ const Intro = () => {
        <button>Book a demo</button>
     </div>
       <div>
-        <div className='container'>
+        <div className='Rcontainer'>
           {url.length > 1 ? <button onClick={()=>setPlay(!play)}><FaPause/></button> : <a onClick={() => setUrl("https://www.youtube.com/watch?v=k2OeJBqXccI&t=1s")} className='play'><FaPlay /></a>}
         </div>
         <div>
           <ReactPlayer url={url} width="100%" height="400px" playing={play } />
          </div>
     </div>
-    <div>
-      <p>Trusted by over 3,000 companies</p>
-    </div>
-  </Conatiner>
+   
+  </REConatiner>
   )
 }
 
@@ -36,7 +34,7 @@ export {Intro}
 
 
 
-const Conatiner = styled.div`
+const REConatiner = styled.div`
   text-align:center;
 
   & > div:first-child{
@@ -90,7 +88,7 @@ const Conatiner = styled.div`
     }
   }
   
-  .container {
+  .Rcontainer {
             position: absolute;
             transform: translate(-50%, -50%);
             padding: 50px;
@@ -106,7 +104,7 @@ const Conatiner = styled.div`
             color: #58BC71;
             border-radius: 50%;
             padding: 15px;
-            position: relative;
+            position: absolute;
         }
 
         .play::after {
