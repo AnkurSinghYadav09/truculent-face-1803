@@ -8,6 +8,7 @@ import {
   Icon,
   Input,
   Text,
+  Image,
 } from "@chakra-ui/react";
 
 const Signup = () => {
@@ -28,7 +29,9 @@ const Signup = () => {
             Speed, flexibility, ability to integrate with the most popular
             project management software.
             <br />
-            Everhour is a time tracking tool your team will actually use.
+            <Center>
+              Everhour is a time tracking tool your team will actually use.
+            </Center>
           </Text>
 
           <Center>
@@ -66,6 +69,41 @@ const Signup = () => {
               Free to try • No credit card required • 1-minute signup
             </Text>
           </Center>
+        </Box>
+      </Center>
+      <Center>
+        <Box boxSize="xm">
+          <Image
+            padding="0 40px"
+            height="90px"
+            width="100%"
+            src="/logo/badges-logos.png"
+            alt=""
+          />
+        </Box>
+      </Center>
+
+      <Center>
+        <Box mt="50px">
+          <Text fontSize="31px" fontWeight="600">
+            A time tracker you can trust for life
+          </Text>
+
+          <Text
+            margin="10px 0px 20px"
+            fontWeight="400"
+            fontSize="12px"
+            color="#7F7F7F"
+          >
+            <Center>
+              We could tell you about the thousands of companies worldwide that
+              use our software
+              <br />
+              
+              for their timekeeping needs… but we thought it best they speak for
+              themselves.
+            </Center>
+          </Text>
         </Box>
       </Center>
     </Box>

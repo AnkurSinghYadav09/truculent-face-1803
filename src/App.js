@@ -1,7 +1,9 @@
 import Signup from "./Components/Signup/Signup";
+// import Tour from "./Components/Tour/Tour"
 function App() {
   return (
-    <div>   
+    <div>  
+      {/* <Tour/>  */}
       <Signup />
     </div>
   );
