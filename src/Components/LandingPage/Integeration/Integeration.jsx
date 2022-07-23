@@ -20,7 +20,7 @@ const Integeration = () => {
   }
 
   return (
-    <Container>
+    <IContainer>
       <div>
         <h1>Estimate tasks, set budgets, customize reports & track time. Directly in your project management tool!</h1>
         <div>
@@ -89,14 +89,14 @@ const Integeration = () => {
         <img src={allIntegration} alt=""/>
         {/* <button>All Integration</button> */}
       </AllIntegration>
-    </Container>
+    </IContainer>
   )
 }
 
 export {Integeration}
 
 
-const Container = styled.div`
+const IContainer = styled.div`
 
   & > div:first-child{
     width:56%;
@@ -106,6 +106,8 @@ const Container = styled.div`
       font-size:44px;
       margin:60px 0px;
       font-weight:540;
+      position:relative;
+      margin-top:280px;
     }
 
     h1+div{
