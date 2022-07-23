@@ -100,7 +100,7 @@ const REConatiner = styled.div`
         .play{
             text-decoration: none;
             background-color: white;
-            border: 2px solid 58BC71;
+            border: 2px solid #58BC71;
             color: #58BC71;
             border-radius: 50%;
             padding: 15px;
@@ -110,34 +110,20 @@ const REConatiner = styled.div`
         .play::after {
             position: absolute;
             content: '';
-            bottom: -7px;
-            top: -7px;
-            left: -7px;
-            right: -7px;
+            bottom: -5px;
+            top: -5px;
+            left: -5px;
+            right: -5px;
             background-color: transparent;
             border-radius: 50%;
-            border: 1px solid #58BC71;
+            border: 3px groove #58BC71;
             margin: 0px;
             opacity: 1;
             transform-origin: center;
-            animation: anim 800ms linear infinite;
+            animation: anim 1500ms linear infinite;
         }
 
-        .play::before {
-            position: absolute;
-            content: '';
-            bottom: -7px;
-            top: -7px;
-            left: -7px;
-            right: -7px;
-            background-color: transparent;
-            border-radius: 50%;
-            border: 0.5px solid #58BC71;
-            margin: 0px;
-            opacity: 0.8;
-            transform-origin: center;
-            animation: anim 850ms linear 350ms infinite;
-        }
+       
 
         @keyframes anim {
             from {
