@@ -183,7 +183,8 @@ const Signup = () => {
 
       <Flex color="white" marginLeft="60px">
         <Square
-          margin="20px"
+          marginTop="-40px"
+          marginLeft="38px"
           w="300px"
           h="200px"
           boxShadow="lg"
@@ -230,7 +231,8 @@ const Signup = () => {
           </Text>
         </Square>
         <Square
-          margin="20px"
+         marginTop="-40px"
+         marginLeft="38px"
           w="270px"
           h="220px"
           boxShadow="lg"
@@ -259,7 +261,7 @@ const Signup = () => {
           margin="20px"
           w="300px"
           h="200px"
-          boxShadow="lg"
+          boxShadow='lg'
           borderRadius={"4px"}
           border="1px solid #c1f7d8"
         >
@@ -303,7 +305,8 @@ const Signup = () => {
           </Text>
         </Square>
         <Square
-          margin="20px"
+          marginTop="-40px"
+          marginLeft="18px"
           w="270px"
           h="220px"
           boxShadow="lg"
@@ -388,7 +391,7 @@ const Signup = () => {
       </Center>
 
       <Image
-      marginTop="-70px"
+        marginTop="-70px"
         padding="0 40px"
         height="142px"
         width="100%"
