@@ -62,8 +62,8 @@ const WhatsInside = () => {
     setShow(index)
   }
   return (
-    <Container>
-      <Wrapper>
+    <WContainer>
+      <PWrapper>
         <div >
           <h1>Use cases</h1>
           <ul>
@@ -91,21 +91,21 @@ const WhatsInside = () => {
         <div>
           <img src={imgUrl} alt="IMG"/>
         </div>
-      </Wrapper>
-    </Container>
+      </PWrapper>
+    </WContainer>
     )
 }
 
 export {WhatsInside}
 
 
-const Container = styled.div`
+const WContainer = styled.div`
   width:96%;
   margin:auto;
   position:relative;
 `
 
-const Wrapper = styled.div`
+const PWrapper = styled.div`
   display:flex;
   justify-content:space-between;
   &  > div{
