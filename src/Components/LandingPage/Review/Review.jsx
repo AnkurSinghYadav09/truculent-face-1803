@@ -5,7 +5,7 @@ import bracketComments from './Images/bracketComments.png'
 
 const Review = () => {
   return(
-    <Container>
+    <RContainer>
       <div>
       <div>
         <div>
@@ -31,14 +31,14 @@ const Review = () => {
         <img src="https://blog-cdn.everhour.com/assets/images/new-design/illustrations/customers/customer-kelly@2x.webp" alt=""/>
       </div>
       </div>
-    </Container>
+    </RContainer>
   )
 }
 
 export {Review}
 
 
-const Container = styled.div`
+const RContainer = styled.div`
   & > div{
     
     display:flex;
