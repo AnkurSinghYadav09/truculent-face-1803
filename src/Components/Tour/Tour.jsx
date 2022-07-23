@@ -1456,7 +1456,7 @@ const Tour = () => {
             style={{
               width: "75%",
               // border: "1px solid red",
-              marginLeft: "200px",
+              marginLeft: "400px",
             }}
           >
             <h1
@@ -1487,7 +1487,7 @@ const Tour = () => {
               // border: "1px solid black",
               height: "750px",
               width: "90%",
-              marginLeft: "90px",
+              marginLeft: "150px",
             }}
           >
             <div
@@ -1649,12 +1649,12 @@ const Tour = () => {
         <Down>
           <Down1>
             <div style={{ marginTop: "70px" }}>
-              <h1 style={{ fontWeight: "bold", fontSize: "35px" }}>
+              <h1 style={{ fontWeight: "bold", fontSize: "40px",color:"#333333" }}>
                 Take the pulse of your business
               </h1>
             </div>
             <P1>
-              <p>Try Everhour for free and see if it works for your business</p>
+              <p style={{fontSize:"25px"}}>Try Everhour for free and see if it works for your business</p>
             </P1>
             <Inp>
               <I>
