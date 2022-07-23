@@ -3,13 +3,13 @@ export const C=styled.div`
 // height:14100px;
 width:97%;
 // border:1px solid orange;
-margin-left:20px;
+margin-left:40px;
 
 `
 export const Head=styled.div`
 width:90%;
-margin-top:50px;
-margin-left:140px;
+margin-top:80px;
+margin-left:250px;
 // border:1px solid black;
 display:flex;
 gap:10px;
@@ -30,8 +30,8 @@ height:500px;
 width:100%;
 margin-right:5px;
 img{
-    height:415px;
-    width:661px;
+    height:450px;
+    width:90%;
 }
 `
 export const H1=styled.div`
@@ -40,12 +40,13 @@ width:80%;
 gap:-10px;
 margin-top:50px;
 p{
-    font-size:45px;
+    font-size:50px;
     text-align:left;
     gap:-10px;
-    margin-top:2px;
+    // margin-top:1px;
     font-weight:bold;
-    // font-family: 'geomanist-book',sans-serif; 
+    font-family: 'geomanist-book',sans-serif; 
+    color:#333333;
 }
 `
 export const Inp=styled.div`
@@ -149,7 +150,7 @@ grid-template-columns:repeat(3,1fr);
 // border:1px solid black;
 height:700px;
 width:85%;
-margin-left:100px;
+margin-left:150px;
 margin-top:50px;
 gap:30px;
 `
@@ -209,7 +210,7 @@ grid-template-columns:repeat(3,1fr);
 // border:1px solid black;
 height:450px;
 width:85%;
-margin-left:100px;
+margin-left:150px;
 margin-top:50px;
 gap:30px;
 `
@@ -239,7 +240,7 @@ grid-template-columns:repeat(3,1fr);
 // border:1px solid black;
 height:450px;
 width:85%;
-margin-left:100px;
+margin-left:150px;
 margin-top:50px;
 gap:30px;
 `
@@ -268,7 +269,7 @@ grid-template-columns:repeat(3,1fr);
 // border:1px solid black;
 height:600px;
 width:85%;
-margin-left:100px;
+margin-left:150px;
 margin-top:50px;
 gap:30px;
 `
@@ -297,7 +298,7 @@ grid-template-columns:repeat(3,1fr);
 // border:1px solid black;
 height:150px;
 width:85%;
-margin-left:100px;
+margin-left:150px;
 margin-top:50px;
 gap:30px;
 `
@@ -326,7 +327,7 @@ grid-template-columns:repeat(3,1fr);
 // border:1px solid black;
 height:500px;
 width:85%;
-margin-left:100px;
+margin-left:150px;
 margin-top:50px;
 gap:30px;
 `
@@ -355,7 +356,7 @@ grid-template-columns:repeat(3,1fr);
 // border:1px solid black;
 height:700px;
 width:85%;
-margin-left:100px;
+margin-left:150px;
 margin-top:50px;
 gap:30px;
 `
@@ -374,7 +375,7 @@ export const Button=styled.button`
 
 height:46px;
 width:200px;
-margin-left:600px;
+margin-left:800px;
 
 // border:1px solid blue;
 button{
@@ -399,7 +400,7 @@ button:hover{
 export const Down=styled.div`
 width:90%;
 margin-top:50px;
-margin-left:140px;
+margin-left:200px;
 // border:1px solid black;
 display:flex;
 gap:10px;
@@ -407,6 +408,7 @@ gap:10px;
 export const Down1=styled.div`
 // border:1px solid red;
 width:100%;
+margin-left:20px;
 `
 export const Down2=styled.div`
 // border:1px solid red;

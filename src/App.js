@@ -1,5 +1,11 @@
+
+import Tour from "./Components/Tour/Tour"
 function App() {
-  return <div></div>;
+  return (
+  <div>
+    <Tour/>
+  </div>
+  )
 }
 
 
