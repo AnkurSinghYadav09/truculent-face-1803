@@ -1,45 +1,39 @@
-import React from "react";
 import { Button } from "@chakra-ui/react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <>
-    <div style={{height:"100px"}}></div>
+      <Link to="/about">About</Link>
+
+      <div style={{ height: "100px" }}></div>
       <div className="main-nav">
         {/* 1st logo part  */}
         <div className="logo">
           <img src="/logo/logo_pic.jpg" alt="" />
-          <h1>Everhour</h1>
+          <Link to="/">
+            <h1>Everhour</h1>
+          </Link>
         </div>
         {/* 2nd part */}
         <div className="menu-link">
           <ul>
             <li>
-              <a href="##">Tour</a>
+              <Link to="tour">Tour</Link>
             </li>
             <li>
               <a href="##">Integration</a>
-              {/* <ul className="dropdown">
-                <li>
-                  <a href="##">Sub-1</a>
-                </li>
-                <li>
-                  <a href="##">Sub-2</a>
-                </li>
-                <li>
-                  <a href="##">Sub-3</a>
-                </li>
-              </ul> */}
             </li>
             <li>
-              <a href="##">customers</a>
+              <Link to="customers">customers</Link>
             </li>
             <li>
-              <a href="###">Pricing</a>
+              <Link to="pricing">Pricing</Link>
             </li>
             <li>
-              <a href="##">Demo</a>
+              <Link to="demo">Demo</Link>
             </li>
           </ul>
         </div>
@@ -47,21 +41,22 @@ const Navbar = () => {
         {/* 3rd part */}
         <div className="nav-login-signup">
           <h2>
-            {" "}
-            <a href="##">Login</a>
+          <Link to='/login'>Login</Link> 
+            
           </h2>
           <Button
-              bg={"#56BB70"}
-              color="white"
-              size="sm"
-              fontSize="13px"
-              fontWeight="400"
-              padding="5px 32px"
-              borderRadius={"3px"}
-              _hover={{ bg: "#56BB70", color: "white", boxShadow: "dark-lg" }}
-            >
-             Sign up
-            </Button>
+            bg={"#56BB70"}
+            color="white"
+            size="sm"
+            fontSize="13px"
+            fontWeight="400"
+            padding="5px 32px"
+            borderRadius={"3px"}
+            _hover={{ bg: "#56BB70", color: "white", boxShadow: "dark-lg" }}
+          >
+            <Link to='/signup'>Sign up</Link> 
+            
+          </Button>
           {/* <button></button> */}
         </div>
       </div>
