@@ -6,6 +6,7 @@ import { Intro } from "./Intro/Intro";
 import { Review } from "./Review/Review";
 import { WhatsInside } from "./WhatsInside/WhatsInside";
 import Badge from "./Badge/Badge";
+import Boxes from "./Boxes/Boxes";
 
 const Container = styled.div`
   font-family: "Lato", sans-serif;
@@ -27,7 +28,8 @@ const Landing = () => {
         <WhatsInside />
         <Integeration />
         <Review />
-        <Badge/>
+        <Badge />
+        <Boxes/>
         <Blog />
       </div>
     </Container>
