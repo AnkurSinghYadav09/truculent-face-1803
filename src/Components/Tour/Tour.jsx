@@ -1456,24 +1456,24 @@ const Tour = () => {
             style={{
               width: "75%",
               // border: "1px solid red",
-              marginLeft: "400px",
+              marginLeft: "350px",
             }}
           >
             <h1
               style={{
                 fontWeight: "bold",
                 fontSize: "40px",
-                marginLeft: "250px",
+                marginLeft: "100px",
                 marginTop: "100px",
               }}
             >
               You are in a good company
             </h1>
-            <p style={{ fontSize: "20px", marginLeft: "120px", color: "gray" }}>
+            <p style={{ fontSize: "20px", color: "gray" }}>
               We could tell you about the thousands of companies worldwide that
               use our software for 
             </p>
-            <p style={{ fontSize: "20px", marginLeft: "150px", color: "gray" }}>their timekeeping needs… but we thought it
+            <p style={{ fontSize: "20px", marginLeft: "50px", color: "gray" }}>their timekeeping needs… but we thought it
               best they speak for themselves.</p>
           </div>
 
@@ -1487,7 +1487,7 @@ const Tour = () => {
               // border: "1px solid black",
               height: "750px",
               width: "90%",
-              marginLeft: "150px",
+              marginLeft: "100px",
             }}
           >
             <div
@@ -1498,14 +1498,14 @@ const Tour = () => {
                 height: "300px",
               }}
             >
-              <h3>
+              <h3 style={{ marginTop: "20px", marginLeft:"1em", marginRight:"1em" }}>
                 “I am the owner of the company, and I use Everhour for
                 timekeeping of myself and my subcontractors. All team members
                 use the system - from web developers to tech support to project
                 management to design.”
               </h3>
               <p
-                style={{ marginTop: "50px", marginLeft: "50px", color: "gray" }}
+                style={{ marginTop: "50px",marginLeft:"6em", marginRight:"1em", color: "gray" }}
               >
                 — Jennifer H. (Source: TrustRadius)
               </p>
@@ -1519,7 +1519,7 @@ const Tour = () => {
                 padingTop: "10px",
               }}
             >
-              <h3 style={{ magrinTop: "20px" }}>
+              <h3 style={{ marginTop: "20px", marginLeft:"1em", marginRight:"1em" }}>
                 “Everhour is being used by my department now, but it’s planned
                 to be used across the whole company. We were having problems
                 tracking the times of every project and Everhour ended up being
@@ -1528,7 +1528,7 @@ const Tour = () => {
                 meetings, project management, etc.)”
               </h3>
               <p
-                style={{ marginTop: "50px", marginLeft: "50px", color: "gray" }}
+                style={{ marginTop: "50px",marginLeft:"6em", marginRight:"1em", color: "gray" }}
               >
                 — Maria Lucia S. (Source: TrustRadius)
               </p>
@@ -1541,14 +1541,14 @@ const Tour = () => {
                 height: "300px",
               }}
             >
-              <h3>
+              <h3 style={{ marginTop: "20px", marginLeft:"1em", marginRight:"1em" }}>
                 “Everhour helps me manage/plan my weekly activities a lot more
                 effectively, since I know how much time I have to work on things
                 each day, and can quickly update estimated times to reallocate
                 tasks as needed.”
               </h3>
               <p
-                style={{ marginTop: "50px", marginLeft: "50px", color: "gray" }}
+                style={{ marginTop: "50px",marginLeft:"6em", marginRight:"1em", color: "gray" }}
               >
                 — Dan S. (Source: Capterra)
               </p>
@@ -1561,7 +1561,7 @@ const Tour = () => {
                 height: "300px",
               }}
             >
-              <h3>
+              <h3 style={{ marginTop: "20px", marginLeft:"1em", marginRight:"1em" }}>
                 “We are using Everhour as a core business software, because our
                 business is to sell our time. When you use such software, what
                 you care about the most is speed, flexibility, ability to
@@ -1569,7 +1569,7 @@ const Tour = () => {
                 Everhour is exactly that kind of software”
               </h3>
               <p
-                style={{ marginTop: "50px", marginLeft: "50px", color: "gray" }}
+                style={{ marginTop: "50px", marginLeft:"6em", marginRight:"1em", color: "gray" }}
               >
                 — Ivan M. (Source: G2Crowd)
               </p>
@@ -1582,7 +1582,7 @@ const Tour = () => {
                 height: "300px",
               }}
             >
-              <h3>
+              <h3 style={{ marginTop: "20px", marginLeft:"1em", marginRight:"1em" }}>
                 “The most important gain from using Everhour is that we can
                 track our tasks in real-time without having to leave the
                 browser. The Chrome add-on helps us initiate the time for a
@@ -1590,7 +1590,7 @@ const Tour = () => {
                 the job.”
               </h3>
               <p
-                style={{ marginTop: "50px", marginLeft: "50px", color: "gray" }}
+                style={{ marginTop: "50px",marginLeft:"6em", marginRight:"1em", color: "gray" }}
               >
                 — Dimitris R. (Source: Capterra)
               </p>
@@ -1603,7 +1603,7 @@ const Tour = () => {
                 height: "280px",
               }}
             >
-              <h3>
+              <h3 style={{ marginTop: "20px", marginLeft:"1em", marginRight:"1em" }}>
                 “Everhour’s integration with Asana is wonderful for a remote
                 team. We track all activities in Asana, but before Everhour I
                 often wondered how long it was taking to do a task, now I know
@@ -1611,7 +1611,7 @@ const Tour = () => {
                 day”.
               </h3>
               <p
-                style={{ marginTop: "50px", marginLeft: "50px", color: "gray" }}
+                style={{ marginTop: "50px", marginLeft:"6em", marginRight:"1em", color: "gray" }}
               >
                 — Doug H. (Source: G2Crowd)
               </p>

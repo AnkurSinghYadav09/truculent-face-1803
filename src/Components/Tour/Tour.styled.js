@@ -1,7 +1,7 @@
 import styled from "styled-components"
 export const C=styled.div`
 // height:14100px;
-width:97%;
+width:100%;
 // border:1px solid orange;
 margin-left:40px;
 
@@ -9,7 +9,7 @@ margin-left:40px;
 export const Head=styled.div`
 width:90%;
 margin-top:80px;
-margin-left:250px;
+margin-left:100px;
 // border:1px solid black;
 display:flex;
 gap:10px;
@@ -17,6 +17,7 @@ gap:10px;
 export const Head1=styled.div`
 // border:1px solid red;
 width:100%;
+margin-left:50px;
 `
 export const P1=styled.div`
 font-size:20px;
@@ -30,8 +31,8 @@ height:500px;
 width:100%;
 margin-right:5px;
 img{
-    height:450px;
-    width:90%;
+    height:415px;
+    width:661px;
 }
 `
 export const H1=styled.div`
@@ -150,7 +151,7 @@ grid-template-columns:repeat(3,1fr);
 // border:1px solid black;
 height:700px;
 width:85%;
-margin-left:150px;
+margin-left:100px;
 margin-top:50px;
 gap:30px;
 `
@@ -210,7 +211,7 @@ grid-template-columns:repeat(3,1fr);
 // border:1px solid black;
 height:450px;
 width:85%;
-margin-left:150px;
+margin-left:100px;
 margin-top:50px;
 gap:30px;
 `
@@ -240,7 +241,7 @@ grid-template-columns:repeat(3,1fr);
 // border:1px solid black;
 height:450px;
 width:85%;
-margin-left:150px;
+margin-left:100px;
 margin-top:50px;
 gap:30px;
 `
@@ -269,7 +270,7 @@ grid-template-columns:repeat(3,1fr);
 // border:1px solid black;
 height:600px;
 width:85%;
-margin-left:150px;
+margin-left:100px;
 margin-top:50px;
 gap:30px;
 `
@@ -298,7 +299,7 @@ grid-template-columns:repeat(3,1fr);
 // border:1px solid black;
 height:150px;
 width:85%;
-margin-left:150px;
+margin-left:100px;
 margin-top:50px;
 gap:30px;
 `
@@ -327,7 +328,7 @@ grid-template-columns:repeat(3,1fr);
 // border:1px solid black;
 height:500px;
 width:85%;
-margin-left:150px;
+margin-left:100px;
 margin-top:50px;
 gap:30px;
 `
@@ -356,7 +357,7 @@ grid-template-columns:repeat(3,1fr);
 // border:1px solid black;
 height:700px;
 width:85%;
-margin-left:150px;
+margin-left:100px;
 margin-top:50px;
 gap:30px;
 `
@@ -375,7 +376,7 @@ export const Button=styled.button`
 
 height:46px;
 width:200px;
-margin-left:800px;
+margin-left:630px;
 
 // border:1px solid blue;
 button{
