@@ -5,12 +5,13 @@ import Login from "./Components/Login/Login";
 import Navbar from "./Components/Navbar/Navbar";
 import Pricing from "./Components/Pricing/Pricing";
 import Signup from "./Components/Signup/Signup";
+import Task from "./Components/Tasks/Task";
 import Tour from "./Components/Tour/Tour";
 
 function App() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/tour" element={<Tour />} />
@@ -19,7 +20,8 @@ function App() {
         <Route path="/demo" element={<Demo />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-      </Routes>
+      </Routes> */}
+      <Task/>
     </div>
   );
 }
