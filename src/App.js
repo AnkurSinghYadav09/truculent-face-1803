@@ -5,6 +5,7 @@ import Login from "./Components/Login/Login";
 import Navbar from "./Components/Navbar/Navbar";
 import Pricing from "./Components/Pricing/Pricing";
 import Signup from "./Components/Signup/Signup";
+import Task from "./Components/Tasks/Task";
 import Tour from "./Components/Tour/Tour";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
+      <Task/> 
     </div>
   );
 }

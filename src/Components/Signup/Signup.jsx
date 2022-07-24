@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Button,
@@ -12,8 +12,15 @@ import {
   Square,
 } from "@chakra-ui/react";
 import { FcGoogle } from "react-icons/fc";
+import axios from "axios";
 
 const Signup = () => {
+  const [sign, setSign] = useState({});
+
+  const handleButton = () => {
+    axios.post(`http://localhost:8080/auth/signup`,sign);
+  };
+
   return (
     <Box>
       <Center>
@@ -38,6 +45,7 @@ const Signup = () => {
 
           <Center>
             <Input
+              onChange={(e) => setSign({ ...sign, [e.target.name]: e.target.value })}
               placeholder="Work email..."
               borderRadius="5px"
               fontSize="12px"
@@ -49,6 +57,7 @@ const Signup = () => {
           <br />
           <Center>
             <Button
+            onClick={handleButton}
               bg={"#56BB70"}
               color="white"
               size="sm"
@@ -231,8 +240,8 @@ const Signup = () => {
           </Text>
         </Square>
         <Square
-         marginTop="-40px"
-         marginLeft="38px"
+          marginTop="-40px"
+          marginLeft="38px"
           w="270px"
           h="220px"
           boxShadow="lg"
@@ -261,7 +270,7 @@ const Signup = () => {
           margin="20px"
           w="300px"
           h="200px"
-          boxShadow='lg'
+          boxShadow="lg"
           borderRadius={"4px"}
           border="1px solid #c1f7d8"
         >
