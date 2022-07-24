@@ -11,7 +11,7 @@ import Tour from "./Components/Tour/Tour";
 function App() {
   return (
     <div>
-      {/* <Navbar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/tour" element={<Tour />} />
@@ -20,8 +20,8 @@ function App() {
         <Route path="/demo" element={<Demo />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-      </Routes> */}
-      <Task/>
+      </Routes>
+      <Task/> 
     </div>
   );
 }

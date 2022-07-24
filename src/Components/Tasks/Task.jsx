@@ -14,31 +14,27 @@ import {
 } from "@chakra-ui/react";
 
 const Task = () => {
-  let array = [
-    {
-      name: "ankur",
-      Time: 2,
-      notes: "my name is ankur",
-    },
-    {
-      name: "ankur",
-      Time: 2,
-      notes: "my name is ankur",
-    },
-  ];
-
   const [data, setData] = useState([]);
   const [formData, setFormData] = useState({});
 
   const handleButton = () => {
-    axios.post("http://localhost:8080/task", formData);
+    axios.post(
+      `http://localhost:8080/user/62c2ce747e928a37b36a725b/task`,
+      formData
+    );
   };
 
   const func = () => {
-    axios.get("http://localhost:8080/task").then((d) => {
-      setData(d.data);
-    });
+    axios
+      .get("http://localhost:8080/user/62c2ce747e928a37b36a725b/tasks")
+      .then((d) => {
+        setData(d.data);
+      });
   };
+
+  useEffect(() => {
+    func();
+  }, [data]);
 
   useEffect(() => {
     func();
@@ -50,7 +46,7 @@ const Task = () => {
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
-        name="task"
+        name="Title"
         placeholder="task"
         size="md"
         w="500px"
@@ -59,7 +55,7 @@ const Task = () => {
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
-        name="notes"
+        name="Notes"
         placeholder="Notes"
         size="md"
         w="200px"
@@ -68,7 +64,7 @@ const Task = () => {
         onChange={(e) =>
           setFormData({ ...formData, [e.target.name]: e.target.value })
         }
-        name="time"
+        name="Label"
         placeholder="time"
         size="md"
         w="100px"
@@ -89,15 +85,15 @@ const Task = () => {
       {data.map((el, ind) => {
         return (
           <div key={ind}>
-            <Flex color="white">
-              <Center w="100px" bg="green.500">
-                <Text>{el.name}</Text>
+            <Flex color="black">
+              <Center w="100px">
+                <Text>{el.Title}</Text>
               </Center>
-              <Square bg="blue.500" size="150px">
-                <Text>{el.time}</Text>
+              <Square size="150px">
+                <Text>{el.Note}</Text>
               </Square>
-              <Box flex="1" bg="tomato">
-                <Text>{el.notes}</Text>
+              <Box flex="1">
+                <Text>{el.Label}</Text>
               </Box>
             </Flex>
           </div>
