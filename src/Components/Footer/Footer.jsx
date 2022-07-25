@@ -5,16 +5,16 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <ul className={styles.uii}>
-      <li><a><img src="footerimg.png" ></img></a></li>
+      <li><a href="##"><img src="footerimg.png" alt=""></img></a></li>
         <li>
-          <a>Campany</a>
+          <a href="##">Campany</a>
           <ul className={styles.sul} >
             <li>About</li>
             <li>Contact</li>
           </ul>
         </li>
         <li>
-          <a>Product</a>
+          <a href="##">Product</a>
           <ul className={styles.sul} >
             <li>Tour</li>
             <li>Pricing</li>
@@ -25,7 +25,7 @@ const Footer = () => {
           </ul>
         </li>
         <li>
-          <a>Solutions</a>
+          <a > Solutions</a>
           <ul className={styles.sul} >
             <li>Time Tracking </li>
             <li>Project Budgeting </li>
@@ -82,7 +82,7 @@ const Footer = () => {
       </ul>
       <div className={styles.lower} >
         <div><label>© 2022 Everhour Terms | Privacy | Cookies | Sitemap</label></div>
-        <div><img src="socialApps.png"></img></div>
+        <div><img src="socialApps.png" alt=""></img></div>
       </div>
     </div>
   );
