@@ -23,11 +23,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>
-<<<<<<< HEAD
-      <Footer />
-=======
       <Task/> 
->>>>>>> ff804259d998f012cc44b63b1deae802d94bace8
     </div>
   );
 }
