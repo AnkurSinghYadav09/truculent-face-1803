@@ -24,7 +24,6 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/task" element={<Task />} />
       </Routes>
-
     </div>
   );
 }
