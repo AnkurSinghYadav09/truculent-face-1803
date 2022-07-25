@@ -22,12 +22,9 @@ function App() {
         <Route path="/demo" element={<Demo />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/task" element={<Task />} />
       </Routes>
-<<<<<<< HEAD
-      <Footer />
-=======
-      <Task/> 
->>>>>>> ff804259d998f012cc44b63b1deae802d94bace8
+
     </div>
   );
 }
