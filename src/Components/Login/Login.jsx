@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import {
   Box,
@@ -13,7 +13,40 @@ import {
   Link,
   Grid,
 } from "@chakra-ui/react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
+  const navigate = useNavigate();
+  const [login, setLogin] = useState({});
+
+  const handleLogin = () => {
+
+    let payload = JSON.stringify(login);
+    fetch("https://everhourbackend.herokuapp.com/auth/login", {
+      headers: {
+        "content-Type": "application/json",
+      },
+      method: "POST",
+      body: payload,
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        if(res.token){
+          localStorage.setItem("userid", JSON.stringify(res._id))
+          navigate("/task")
+        }else{
+          alert(res.message)
+        }
+        })
+      .catch((err) => console.log(err));
+    // axios
+    //   .post("https://everhourbackend.herokuapp.com/auth/login", login)
+    //   .then((r) => {
+    //     localStorage.setItem("userid", JSON.stringify(r.data._id));
+    //     navigate("/task");
+    //   });
+  };
+
   return (
     <Box>
       <Center>
@@ -67,7 +100,11 @@ const Login = () => {
 
             <Center>
               <Input
-                placeholder=" Email"
+                onChange={(e) =>
+                  setLogin({ ...login, [e.target.name]: e.target.value })
+                }
+                name="username"
+                placeholder="username"
                 borderRadius="5px"
                 h="40px"
                 w="270px"
@@ -79,6 +116,10 @@ const Login = () => {
 
             <Center>
               <Input
+                onChange={(e) =>
+                  setLogin({ ...login, [e.target.name]: e.target.value })
+                }
+                name="password"
                 placeholder="Password"
                 borderRadius="5px"
                 h="40px"
@@ -90,6 +131,7 @@ const Login = () => {
             <br />
             <Center>
               <Button
+                onClick={handleLogin}
                 bg={"#56BB70"}
                 color="white"
                 size="xl"

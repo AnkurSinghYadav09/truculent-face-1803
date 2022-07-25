@@ -13,12 +13,29 @@ import {
 } from "@chakra-ui/react";
 import { FcGoogle } from "react-icons/fc";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
+  const navigate = useNavigate();
   const [sign, setSign] = useState({});
 
   const handleButton = () => {
-    axios.post(`http://localhost:8080/auth/signup`,sign);
+    console.log(sign);
+    let payload = JSON.stringify(sign);
+    fetch("https://everhourbackend.herokuapp.com/auth/signup", {
+      headers: {
+        "content-Type": "application/json",
+      },
+      method: "POST",
+      body: payload,
+    })
+      .then((res) => res.json())
+      .then((res) => navigate("/login"))
+      .catch((err) => console.log(err));
+    // axios.post(`https://everhourbackend.herokuapp.com/auth/signup`,sign).then((r)=>{
+    //      alert("sign up succesfully");
+    //       navigate("/login")
+    // });
   };
 
   return (
@@ -45,8 +62,11 @@ const Signup = () => {
 
           <Center>
             <Input
-              onChange={(e) => setSign({ ...sign, [e.target.name]: e.target.value })}
-              placeholder="Work email..."
+              onChange={(e) =>
+                setSign({ ...sign, [e.target.name]: e.target.value })
+              }
+              placeholder="name"
+              name="name"
               borderRadius="5px"
               fontSize="12px"
               // size="sm"
@@ -56,8 +76,54 @@ const Signup = () => {
           </Center>
           <br />
           <Center>
+            <Input
+              onChange={(e) =>
+                setSign({ ...sign, [e.target.name]: e.target.value })
+              }
+              placeholder="username"
+              name="username"
+              borderRadius="5px"
+              fontSize="12px"
+              // size="sm"
+              htmlSize={39}
+              width="auto"
+            />
+          </Center>
+          <br />
+          <Center>
+            <Input
+              onChange={(e) =>
+                setSign({ ...sign, [e.target.name]: e.target.value })
+              }
+              placeholder="email"
+              name="email"
+              borderRadius="5px"
+              fontSize="12px"
+              // size="sm"
+              htmlSize={39}
+              width="auto"
+            />
+          </Center>
+          <br />
+          <Center>
+            <Input
+              onChange={(e) =>
+                setSign({ ...sign, [e.target.name]: e.target.value })
+              }
+              placeholder="password"
+              name="password"
+              borderRadius="5px"
+              fontSize="12px"
+              // size="sm"
+              htmlSize={39}
+              width="auto"
+            />
+          </Center>
+
+          <br />
+          <Center>
             <Button
-            onClick={handleButton}
+              onClick={handleButton}
               bg={"#56BB70"}
               color="white"
               size="sm"

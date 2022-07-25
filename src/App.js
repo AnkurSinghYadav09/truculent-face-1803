@@ -20,8 +20,8 @@ function App() {
         <Route path="/demo" element={<Demo />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/task" element={<Task />} />
       </Routes>
-      <Task/> 
     </div>
   );
 }

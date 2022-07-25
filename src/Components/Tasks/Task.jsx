@@ -16,54 +16,53 @@ import {
 const Task = () => {
   const [data, setData] = useState([]);
   const [formData, setFormData] = useState({});
+  console.log(formData);
+
+  const id = +JSON.parse(localStorage.getItem("userid"));
+  console.log(typeof id);
+
+  const handleChange = (e) => {
+    setFormData({ [e.target.name]: e.target.value });
+  };
 
   const handleButton = () => {
     axios.post(
-      `http://localhost:8080/user/62c2ce747e928a37b36a725b/task`,
+      `https://everhourbackend.herokuapp.com/user/${id}/task`,
       formData
     );
   };
 
-  const func = () => {
+  // const func = () => {
+    
+  // };
+  // func()
+  useEffect(() => {
     axios
-      .get("http://localhost:8080/user/62c2ce747e928a37b36a725b/tasks")
+      .get(`https://everhourbackend.herokuapp.com/user/${id}/tasks`)
       .then((d) => {
+        console.log(d.data)
         setData(d.data);
       });
-  };
-
-  useEffect(() => {
-    func();
-  }, [data]);
-
-  useEffect(() => {
-    func();
-  }, []);
+  },[]);
 
   return (
     <Box>
       <Input
-        onChange={(e) =>
-          setFormData({ ...formData, [e.target.name]: e.target.value })
-        }
+        onChange={handleChange}
         name="Title"
         placeholder="task"
         size="md"
         w="500px"
       />
       <Input
-        onChange={(e) =>
-          setFormData({ ...formData, [e.target.name]: e.target.value })
-        }
+        onChange={handleChange}
         name="Notes"
         placeholder="Notes"
         size="md"
         w="200px"
       />
       <Input
-        onChange={(e) =>
-          setFormData({ ...formData, [e.target.name]: e.target.value })
-        }
+        onChange={handleChange}
         name="Label"
         placeholder="time"
         size="md"
@@ -85,16 +84,12 @@ const Task = () => {
       {data.map((el, ind) => {
         return (
           <div key={ind}>
-            <Flex color="black">
-              <Center w="100px">
-                <Text>{el.Title}</Text>
-              </Center>
-              <Square size="150px">
-                <Text>{el.Note}</Text>
-              </Square>
-              <Box flex="1">
-                <Text>{el.Label}</Text>
-              </Box>
+            <Flex color="black" gap="20px">
+              <Text>{el.Title}</Text>
+              <br />
+              <br />
+              <Text>{el.Note}</Text>
+              <Text>{el.Label}</Text>
             </Flex>
           </div>
         );
