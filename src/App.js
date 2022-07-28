@@ -9,6 +9,7 @@ import Pricing from "./Components/Pricing/Pricing";
 import Signup from "./Components/Signup/Signup";
 import Task from "./Components/Tasks/Task";
 import Tour from "./Components/Tour/Tour";
+// import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/task" element={<Task />} />
       </Routes>
-
+      <Footer/>
     </div>
   );
 }
